@@ -75,3 +75,87 @@ Containerization platform used to package the application and its dependencies, 
 ### 🔁 Git & GitHub
 Version control tools used for tracking changes, managing branches, and collaborating with team members.
 
+## 🗄️ Database Design
+
+The AirBnB Clone project requires a well-structured relational database. Below are the key entities, their essential fields, and how they relate to one another:
+
+### 👤 Users
+Represents the users of the platform.
+
+- `id` (Primary Key)
+- `name`
+- `email`
+- `password_hash`
+- `date_joined`
+
+**Relationships**:
+- A user can own multiple properties.
+- A user can make multiple bookings.
+- A user can leave multiple reviews.
+- A user can make multiple payments.
+
+---
+
+### 🏠 Properties
+Represents listings posted by hosts.
+
+- `id` (Primary Key)
+- `title`
+- `description`
+- `location`
+- `price_per_night`
+- `host_id` (Foreign Key → Users)
+
+**Relationships**:
+- A property belongs to one user (host).
+- A property can have multiple bookings.
+- A property can have multiple reviews.
+
+---
+
+### 📅 Bookings
+Represents reservations made by users.
+
+- `id` (Primary Key)
+- `property_id` (Foreign Key → Properties)
+- `user_id` (Foreign Key → Users)
+- `check_in_date`
+- `check_out_date`
+- `total_price`
+
+**Relationships**:
+- A booking is made by one user.
+- A booking is for one property.
+
+---
+
+### ✍️ Reviews
+Represents user feedback for properties.
+
+- `id` (Primary Key)
+- `user_id` (Foreign Key → Users)
+- `property_id` (Foreign Key → Properties)
+- `rating` (1–5)
+- `comment`
+
+**Relationships**:
+- A review is made by one user.
+- A review is for one property.
+
+---
+
+### 💳 Payments
+Represents transactions made for bookings.
+
+- `id` (Primary Key)
+- `user_id` (Foreign Key → Users)
+- `booking_id` (Foreign Key → Bookings)
+- `amount`
+- `payment_date`
+- `payment_status`
+
+**Relationships**:
+- A payment is made by one user.
+- A payment is tied to one booking.
+
+
