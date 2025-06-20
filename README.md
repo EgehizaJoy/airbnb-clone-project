@@ -189,3 +189,20 @@ Securing the backend APIs is essential to ensure the safety and integrity of the
 
 ### ✅ Authentication
 Users must log in using secure credentials to access
+
+## ⚙️ CI/CD Pipeline
+
+CI/CD stands for Continuous Integration and Continuous Deployment. It is a development practice that automates the process of testing, building, and deploying code. This ensures that new code changes are reliably delivered to production without manual intervention.
+
+Implementing a CI/CD pipeline in this project helps:
+- Detect bugs early through automated testing.
+- Maintain consistent build environments.
+- Speed up deployment and improve collaboration.
+
+### 🛠 Tools Used
+- **GitHub Actions**: Automates tasks such as running tests and deploying code when changes are pushed to the repository.
+- **Docker**: Creates consistent environments for development, testing, and deployment.
+- **Pytest** (or other test runners): Automatically runs unit and integration tests during each pipeline stage.
+
+By integrating these tools, the project can maintain high code quality and reduce the risk of introducing errors during updates.
+
