@@ -183,3 +183,9 @@ Provides users with the ability to search properties by location, price range, d
 ### 🛠 Admin Panel (optional)
 For project or developer use, an admin panel can provide access to manage users, properties, and bookings directly. Useful for testing, debugging, and backend control.
 
+## 🔐 API Security
+
+Securing the backend APIs is essential to ensure the safety and integrity of the application, users, and data. Below are the key security measures planned for this project:
+
+### ✅ Authentication
+Users must log in using secure credentials to access
