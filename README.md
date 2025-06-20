@@ -47,3 +47,31 @@ Designs user interfaces that are intuitive and aesthetically pleasing. Focuses o
 ### 📄 DevOps Engineer (optional in small teams)
 Automates deployment, manages servers, monitors system health, and ensures continuous integration and delivery (CI/CD) pipelines are in place.
 
+## 🛠 Technology Stack
+
+Below is a breakdown of the technologies used in this project and their purpose:
+
+### 🐍 Django
+A high-level Python web framework that simplifies the process of building robust, secure web applications. Used for handling backend logic, URL routing, and server-side rendering.
+
+### 🐘 PostgreSQL
+A powerful, open-source object-relational database system used to store and manage application data. Chosen for its reliability and support for complex queries.
+
+### 🔍 GraphQL
+A query language for APIs that allows clients to request exactly the data they need. Used to optimize data fetching between the frontend and backend.
+
+### 🌐 HTML5 & CSS3
+Core web technologies used to structure and style the user interface of the application. Essential for responsive and accessible design.
+
+### 💻 JavaScript
+Used to add interactivity on the frontend, handle dynamic content updates, and communicate with the backend via API calls.
+
+### 🧪 Pytest
+A testing framework for Python used to ensure the reliability of backend logic through automated tests.
+
+### 🐳 Docker
+Containerization platform used to package the application and its dependencies, ensuring consistent environments across development and deployment.
+
+### 🔁 Git & GitHub
+Version control tools used for tracking changes, managing branches, and collaborating with team members.
+
